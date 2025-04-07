@@ -12,11 +12,11 @@ body {
 body::before {
   content: "";
   background: #262626;
-  width: 100%;
+  width: 120%;
   height: 120%;
   position: absolute;
   top: 0;
-  left: -600px;
+  left: -900px;
   transform: rotate(-600deg);
 }
 
@@ -70,6 +70,13 @@ body::after {
 .tenis {
   width: 800px;
   transform: rotate(-25deg);
+  filter: drop-shadow(20px 45px 40px rgba(0, 0, 0, 0.6));
+  transition: 1s;
+}
+
+.troca-efeito {
+  opacity: 0;
+  transform: rotate(-25deg) translateY(-30px);
 }
 
 .page {
@@ -98,6 +105,14 @@ body::after {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1);
+  transform: translateY(-10px);
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
 }
 
 .button:active {
